@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bo {
+  display: flex;
+  justify-content: center; /* center the whole row */
+  gap: 40px; /* space between items */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.item {
+  text-align: center;
+  width: 300px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.item p.title {
+  color: rgb(28, 28, 28);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.item p.subtitle {
+  color: rgb(254, 254, 254);
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+  
+    </style>
+</head>
+<body>
+     <div class="bo">
+  <div class="item">
+    <img src="ee.webp" alt="Furniture">
+    <p class="title">Furniture</p>
+    <p class="subtitle">IKEA Furniture</p>
+  </div>
+
+  <div class="item">
+    <img src="gf.jpeg" alt="Studio">
+    <p class="title">Studio</p>
+    <p class="subtitle">Live Pictures</p>
+  </div>
+
+  <div class="item">
+    <img src="tg.jpeg" alt="Oceans">
+    <p class="title">Oceans</p>
+    <p class="subtitle">Mysterious marine animals</p>
+  </div>
+</div>
+
+</body>
+</html>
