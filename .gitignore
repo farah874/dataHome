@@ -20,3 +20,9 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Remote ignores
+*.log
+.DS_Store
+Thumbs.db
+
