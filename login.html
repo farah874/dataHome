@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #050505;
+        }
+
+        .subscribe {
+            text-align: center;
+            background: #5d5b5b;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+        }
+        #home{
+            color: #050505;
+            text-size-adjust: 10px;
+            
+        }
+        #home:hover{
+            color: rgb(159, 138, 180);
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
     <title>Login</title>
 </head>
+
 <body>
-    <H1>dfhfgh</H1>
+
+    <body>
+        <section class="subscribe">
+            <a href="home.html" id="home">home</a>
+            <h1>Login to dataHome</h1>
+            <form id="subscribeForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit" id="subscribeBtn">Subscribe</button>
+            </form>
+            <p id="message"></p>
+            <script src="loginPage.js"></script>
+        </section>
+    </body>
 </body>
+
 </html>

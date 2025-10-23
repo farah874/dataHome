@@ -288,11 +288,63 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  margin: 0;
  padding: 10px;
 }
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.pic-s{
-   display: block;       
-    margin: 0 auto;      
-    width: 1000px;       
-    height: 50px;  
-    
+.image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 480px;
+  
+}
+
+#sliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+/* Buttons styling */
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #454a4f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  opacity: 0.9;
+}
+
+/* Hover effects */
+#prevBtn:hover,
+#nextBtn:hover {
+  background-color: blueviolet;
+}
+
+/* Place buttons just outside the image edges */
+#prevBtn {
+  left: -91px; /* move slightly outside image edge */
+}
+
+#nextBtn {
+  right: -67px; /* move slightly outside image edge */
 }
