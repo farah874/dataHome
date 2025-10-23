@@ -22,8 +22,7 @@ message.style.color = 'red';
 return;
 }
 
-message.textContent = `Thank you, ${name}, for 
-login!`;
+message.textContent = `Thank you, ${name}, for login!`;
 message.style.color = 'black';
 // Optionally, clear the form
 document.getElementById('subscribeForm').reset();
