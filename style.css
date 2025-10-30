@@ -49,8 +49,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       justify-content: space-between;
       align-items: flex-start;
       padding: 5px;
-     color: white;              /* default text color */
-     flex-wrap: wrap;           /* allow wrapping on smaller screens */
+     color: white;              
+     flex-wrap: wrap;           
   
  }
  .h1-s{
@@ -94,7 +94,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
  .top h4{
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 20px; 
     color: white;
     font-size: large;
  }
@@ -111,7 +111,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 60px;
     font-size: 1.5em;
     text-align: center;
-    margin-top: 140px; /* Add this */
+    margin-top: 140px; 
     margin-bottom: 100px;
 }
 
@@ -134,8 +134,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .call{
     display: flex;
-   justify-content: justify; /* center the whole row */
-   gap: 20px; /* space between items */
+   justify-content: justify; 
+   gap: 20px; 
    flex-wrap: wrap; 
    
 
@@ -229,13 +229,13 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 .ab1 {
   display: flex;
-  align-items: center;       /* vertical alignment */
-  justify-content: center;   /* horizontal alignment */
-  gap: 20px;                 /* space between image and text */
+  align-items: center;       
+  justify-content: center;   
+  gap: 20px;                 
   padding: 1px;
-  color: white;              /* default text color */
+  color: white;              
   text-align: left;
-  flex-wrap: wrap;           /* allow wrapping on smaller screens */
+  flex-wrap: wrap;          
    margin-top: -40px; 
 }
 
@@ -317,7 +317,6 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   transition: opacity 0.5s ease;
 }
 
-/* Buttons styling */
 #prevBtn,
 #nextBtn {
   position: absolute;
@@ -334,17 +333,16 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   opacity: 0.9;
 }
 
-/* Hover effects */
+
 #prevBtn:hover,
 #nextBtn:hover {
   background-color: blueviolet;
 }
 
-/* Place buttons just outside the image edges */
 #prevBtn {
-  left: -91px; /* move slightly outside image edge */
+  left: -91px; 
 }
 
 #nextBtn {
-  right: -67px; /* move slightly outside image edge */
+  right: -67px; 
 }
