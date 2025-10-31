@@ -7,9 +7,7 @@ const email =
 document.getElementById('email').value.trim();
 const message =
 document.getElementById('message');
-// Reset message
 message.textContent = '';
-// Validation
 if (!name || !email) {
 message.textContent = 'Please fill out all fields.';
 message.style.color = 'red';
@@ -24,7 +22,15 @@ return;
 
 message.textContent = `Thank you, ${name}, for login!`;
 message.style.color = 'black';
-// Optionally, clear the form
 document.getElementById('subscribeForm').reset();
 });
-// Success message
+
+document.addEventListener("DOMContentLoaded", function () {
+    const signUpBtn = document.getElementById("signUpBtn");
+
+    if (signUpBtn) {
+        signUpBtn.addEventListener("click", function () {
+            window.location.href = "signup.html";
+        });
+    }
+});
